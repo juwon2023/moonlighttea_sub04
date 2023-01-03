@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1400">
+    <title>달빛홍차</title>
+    <link rel="icon" href="images/icon.png" sizes="32x32"><!--파비콘-->
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="../moonlighttea_sub04/css/visit.css" rel="stylesheet" type="text/css"><!-- 폼태그 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet"> <!--노트산스serif-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet"> <!--노트산스kr-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/style-aos.css" rel="stylesheet" type="text/css"> <!-- AOS 스크롤 css-->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- tap -->
+
+</head>
+<body>
+
+    <!--js--> <!-- AOS 스크롤 css-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script-aos.js"></script>
+    <!--js--> <!-- AOS 스크롤 css-->
+
+<div id="header"> <!-- header s -->
+
+  <div class="header_inner">
+
+      <ul data-aos="fade-down" class="nav_01">
+          <li><a href="https://juwon2022.github.io/moonlighttea_subpage01/">소개</a></li>
+          <li><a href="https://juwon2022.github.io/moonlighttea_subpage02/">메뉴</a></li>
+      </ul>
+
+      <a data-aos="fade-down" class="logo" href="https://juwon2022.github.io/moonlighttea/"><img src="images/logo.png" alt="달빛홍차로고"></a>
+
+      <ul data-aos="fade-down" class="nav_02">
+          <li><a href="https://juwon2022.github.io/moonlighttea_subpage03/">멤버십</a></li>
+          <li><a href="https://juwon2022.github.io/moonlighttea_subpage04/">소식</a></li>
+      </ul>
+
+
+      <div data-aos="fade-up" class="brand">
+
+          <h1>NEWS</h1>
+
+      </div>
+
+  </div>
+
+
+  
+</div> <!-- header f -->
+
+<!-- tap s -->
+<div id="container">
+		
+    <ul class="tab">
+        <li class="current" data-tab="tab1"><a href="#none">진행중인 이벤트</a></li>
+        <li data-tab="tab2"><a href="#none">종료된 이벤트</a></li>
+    </ul>
+
+    <div id="tab1" class="tabcontent current">
+        <ul class="eventul">
+            <li data-aos="flip-left" ><a href="#none">
+                <img src="images/event_01.jpg" alt="event_01.jpg">
+                <div class="border">
+                    <p class="p1">[진행중] 달빛홍차 1주년 기념 이벤트</p>
+                    <p class="p2"><span>이벤트 기간:</span> 2022-11-11 ~ 2022-11-18까지</p>
+                </div>
+            </a></li>
+            <li data-aos="flip-left" ><a href="#none">
+                <img src="images/event_02.jpg" alt="event_02.jpg">
+                <div class="border">
+                    <p class="p1">[진행중] SNS 인증 이벤트</p>
+                    <p class="p2"><span>이벤트 기간:</span> 2022-11-01 ~ 2022-11-31까지</p>
+                </div>
+            </a></li>
+            <li data-aos="flip-left" ><a href="#none">
+                <img src="images/event_03.jpg" alt="event_03.jpg">
+                <div class="border">
+                    <p class="p1">[진행중] 가을 신메뉴 출시 기념 1+1 이벤트</p>
+                    <p class="p2"><span>이벤트 기간:</span> 2022-10-25 ~ 2022-11-18까지</p>
+                </div>
+            </a></li>
+        </ul>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+        <ul class="eventul">
+            <li class="eventli">
+                <div class="border2">
+                    <img src="images/stop.png" alt="">
+                    <h2>페이지 준비 중입니다.</h2>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+    <script>
+        $(function() {
+            $('ul.tab li').click(function() {
+                var activeTab = $(this).attr('data-tab');
+                $('ul.tab li').removeClass('current');
+                $('.tabcontent').removeClass('current');
+                $(this).addClass('current');
+                $('#' + activeTab).addClass('current');
+            })
+        });
+    
+    </script>
+<!-- tap f -->
+
+    <div id="con"><!--고객의소리 시작-->
+
+        <div class="con_inner">
+
+            <h2 data-aos="fade-down">고객의 소리</h2>
+
+            <p data-aos="fade-down" class="con_text">달빛홍차에게 전하고 싶은 불만, 칭찬을 보내주세요.<br>
+
+            항상 고객의 소리에 귀 기울이면 고객만족 향상을 위해 노력하겠습니다.</p>
+            
+
+            <table>
+                <tr>
+                    <th class="th">상담유형</th>
+                    <td class="age_pd">
+                            <input type="checkbox" name="age" id="age1" value="10" checked>
+                            <label for="age1"> 칭찬</label>
+                            <input type="checkbox" name="age" id="age2" value="20">
+                            <label for="age2"> 불만</label>
+                            <input type="checkbox" name="age" id="age3" value="30">
+                            <label for="age3"> 문의</label>
+                    </td>
+                </tr>
+           
+
+          
+                <tr>
+                    <th class="th">내용유형</th>
+                    <td class="age_pd">
+                            <input type="checkbox" name="age" id="age4" value="10" checked onclick="checkOnlyOne(this)">
+                            <label for="age4">제품</label>
+                            
+                            <input type="checkbox" name="age" id="age5" value="20 "onclick="checkOnlyOne(this)">
+                            <label for="age5">서비스</label>
+
+                            <input type="checkbox" name="age" id="age6" value="30" onclick="checkOnlyOne(this)">
+                            <label for="age6">어플관련</label>
+
+                            <input type="checkbox" name="age" id="age7" value="30" onclick="checkOnlyOne(this)">
+                            <label for="age7">이벤트</label>
+                            
+                            <input type="checkbox" name="age" id="age8" value="30" onclick="checkOnlyOne(this)">
+                            <label for="age8">기타</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="th">성함</th>
+                    <td class="age_pd">
+                            <input type="text" name="age" id="text1" placeholder="성함을 입력해주세요.">
+                            <label for="text1"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="th">이메일</th>
+                    <td class="age_pd">
+                            <input type="text" name="age" id="text1" placeholder="이메일을 입력해주세요.">
+                            <label for="text1"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="th">연락처</th>
+                    <td class="age_pd">
+                            <input type="text" name="age" id="text1" placeholder="연락처를 입력해주세요.">
+                            <label for="text1"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="th">내용</th>
+                    <td class="age_pd2">
+                            <textarea name="text2" id="text2" placeholder="내용을 입력해주세요."></textarea>
+                            <label for="text2"></label>
+                    </td>
+                </tr>
+ 
+            </table>
+
+            
+
+
+        </div>
+
+    </div>
+
+    <div id="con2">
+
+        <div0 class="con2_inner">
+
+            <div id="contents"><!--contents 시작-->
+
+                <h6 class="text_p">개인정보의 수집 및 이용동의</h6>
+
+                <div class="accept"><!--accept 시작-->
+
+                    <p>이용자 본인은 아래의 개인정보가 사실임을 확인하며, 아래와 같이 개인정보를 수집 및 이용하는 것에 동의합니다.</p>
+                    <ol>
+                        <li><strong>개인정보의 수집 및 이용 목적</strong><br>
+                        달빛홍차 상담문의 작성에 따른 본인 식별을 위하여 이용자의 개인정보를 수집하고 있습니다.</li>
+                        <li><strong>수집하는 개인정보의 항목</strong><br>
+                            <ul>
+                                <li>신청자, 이메일, 연락처 &middot; 서비스이용과정이나 사업처리 과정에서 아래와 같은 정보들이 생성되어 수집될 수 있습니다.</li>
+                                <li>서비스이용기록, 접속로그, 쿠키, 접속IP정보</li>
+                            </ul>
+                        </li>
+                        <li><strong>개인정보의 보유 및 이용기간</strong><br>
+                        원칙적으로 개인정보의 수집목적 또는 이용 목적이 달성되면 지체 없이 파기합니다. 다만, 관계법률에 의해 회사가 통신사실 확인자료 제공을 위하여 필요한 성명, 전화번호는 12개월간 보관합니다.(통신비밀보호법 제 15조의2)</li>
+                    </ol>
+
+
+                </div><!--accept 종료-->
+
+                <div class="box1">
+                    <input type="checkbox" name="check1" id="check1">
+                <label for="check1">개인정보 수집 이용에 관한 사항(필수)에 동의합니다.</label>
+                </div>
+
+                <div class="box2">
+                    <a class="con_btn" href="#none">작성완료</a>
+                </div>
+
+                
+
+                
+
+            </div><!--contents 종료-->
+
+            
+
+        </div>
+
+    </div>
+
+    <div id="footer"> <!-- footer s -->
+        <div class="footer_inner">
+    
+            <div data-aos="fade-up" class="ft_left">
+                
+                <a class="f_logo" href="https://juwon2022.github.io/moonlighttea/">
+                    <img src="images/footer_logo.png" alt="footer_logo">
+                </a>
+                
+                <ul class="f_text">
+                    <li>대표자 :   신주원</li>
+                    <li>사업자등록번호 :  123-12-34567</li>
+                    <li>TEL :  02-123-1028 FAX :  02-123-1029</li>
+                    <li>본사 :  부산 중구 대청로156번길</li>
+                </ul>
+                
+            </div>
+    
+            <div data-aos="fade-up" class="ft_right">
+                <a href="#none"><img src="images/facebook.png" alt="facebook.png"></a>
+                <a class="insta" href="#none"><img src="images/insta.png" alt="insta.png"></a>
+                <a href="#none"><img src="images/twitter.png" alt="twitter.png"></a>
+            </div>
+        </div>
+    </div> <!-- footer f -->
+
+</body>
+</html>
